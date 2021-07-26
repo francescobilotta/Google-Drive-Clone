@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
-import Header from "./components/header/index.js";
+import Header from "./components/header/index";
+import Sidebar from "./components/sidebar/index";
 
 function App() {
   const [user, setUser] = useState({
@@ -14,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <Header userPhoto={user.photoURL} />
-
+      <Sidebar />
       {/* Auth = true
     sidebar
     filesView

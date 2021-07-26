@@ -25,3 +25,12 @@
 ##### _Header made_
 
 ![Header made](/doc/photos/2.PNG)<br/>
+
+# 3. [Sidebar]
+
+- Created the sidebar
+- Styled the sidebar
+
+##### _Sidebar made_
+
+![Sidebar made](/doc/photos/3.PNG)<br/>
