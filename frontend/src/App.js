@@ -1,9 +1,19 @@
+import { useState } from "react";
 import "./App.css";
+import Header from "./components/header/index.js";
 
 function App() {
+  const [user, setUser] = useState({
+    displayName: "Francesco Bilotta",
+    email: "bilottafrancesco.business@gmail.com",
+    emailVerified: true,
+    phoneNumber: null,
+    photoURL:
+      "https://yt3.ggpht.com/yti/APfAmoE4ExD8iJP0uV9mdfJkWsh2uIG-OLGcHYfHOqcW=s88-c-k-c0x00ffffff-no-rj-mo",
+  });
   return (
     <div className="App">
-      {/* Header */}
+      <Header userPhoto={user.photoURL} />
 
       {/* Auth = true
     sidebar

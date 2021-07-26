@@ -13,3 +13,15 @@
 ##### _Created Firebase Project_
 
 ![App created 1/2](/doc/photos/1_2.PNG)<br/>
+
+# 2. [Header]
+
+- Created the logo on the left
+- npm i @material-ui/core @material-ui/icons
+- Created the search bar
+- Created user_logo, setting etc icons
+- Set up useState in App.js to send the photoURL
+
+##### _Header made_
+
+![Header made](/doc/photos/2.PNG)<br/>
