@@ -34,3 +34,17 @@
 ##### _Sidebar made_
 
 ![Sidebar made](/doc/photos/3.PNG)<br/>
+
+# 4. [Files Upload]
+
+- Connected to Firebase
+- Created upload scripts
+- Uploaded a photo as a test
+
+##### _Firestore View_
+
+![Firestore View](/doc/photos/4_1.PNG)<br/>
+
+##### _Database View_
+
+![Database View](/doc/photos/4_2.PNG)<br/>
