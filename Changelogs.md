@@ -56,3 +56,11 @@
 ##### _Fixed Button_
 
 ![Firestore View](/doc/photos/5.PNG)<br/>
+
+# 6. [Files Visualization]
+
+- Worked on files visualization (still no event on touch)
+
+##### _Files Visualization_
+
+![Files Visualization](/doc/photos/6.PNG)<br/>

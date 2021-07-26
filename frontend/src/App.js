@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import FilesView from "./components/filesView/FilesView";
 import Header from "./components/header/index";
 import Sidebar from "./components/sidebar/index";
 
@@ -9,17 +10,16 @@ function App() {
     email: "bilottafrancesco.business@gmail.com",
     emailVerified: true,
     phoneNumber: null,
-    photoURL:
-      "https://yt3.ggpht.com/yti/APfAmoE4ExD8iJP0uV9mdfJkWsh2uIG-OLGcHYfHOqcW=s88-c-k-c0x00ffffff-no-rj-mo",
+    photoURL: "https://yt3.ggpht.com/yti/APfAmoE4ExD8iJP0uV9mdfJkWsh2uIG-OLGcHYfHOqcW=s88-c-k-c0x00ffffff-no-rj-mo",
   });
   return (
     <div className="App">
       <Header userPhoto={user.photoURL} />
-      <Sidebar />
-      {/* Auth = true
-    sidebar
-    filesView
-    sideIcon */}
+
+      <div className="app__main">
+        <Sidebar />
+        <FilesView />
+      </div>
 
       {/* No Auth: log in */}
     </div>
