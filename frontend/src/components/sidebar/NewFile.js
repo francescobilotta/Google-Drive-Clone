@@ -10,9 +10,9 @@ import Modal from "@material-ui/core/Modal";
 
 function getModalStyle() {
   return {
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
+    top: `50%`,
+    left: `50%`,
+    transform: `translate(-50%, -50%)`,
   };
 }
 
@@ -77,8 +77,8 @@ const NewFile = () => {
   };
   return (
     <div className="newFile">
-      <div className="newFile_container" onClick={handleOpen}>
-        <AddIcon />
+      <div className="newFile__container" onClick={handleOpen}>
+        <AddIcon fontSize="large" />
         <p>New</p>
       </div>
 

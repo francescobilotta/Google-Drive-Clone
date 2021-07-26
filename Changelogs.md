@@ -48,3 +48,11 @@
 ##### _Database View_
 
 ![Database View](/doc/photos/4_2.PNG)<br/>
+
+# 5. [Fixed Button Graphics]
+
+- Fixed not working graphics
+
+##### _Fixed Button_
+
+![Firestore View](/doc/photos/5.PNG)<br/>
