@@ -72,3 +72,20 @@
 ##### _Side Icons_
 
 ![Side Icons](/doc/photos/7.PNG)<br/>
+
+# 8. [User Authentication]
+
+- Implemented firebase authentication
+- TODO Logout
+
+##### _Login Page_
+
+![Login Page](/doc/photos/8_1.PNG)<br/>
+
+##### _Choose Account_
+
+![Choose Account](/doc/photos/8_2.PNG)<br/>
+
+##### _Logged In_
+
+![Logged In](/doc/photos/8_3.PNG)<br/>

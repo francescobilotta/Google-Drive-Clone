@@ -4,24 +4,49 @@ import FilesView from "./components/filesView/FilesView";
 import Header from "./components/header/index";
 import Sidebar from "./components/sidebar/index";
 import SideIcons from "./components/sideIcons/index";
+import GDriveLogo from "./media/Google_Drive_logo.png";
+import { auth, provider } from "./firebase";
 
 function App() {
-  const [user, setUser] = useState({
-    displayName: "Francesco Bilotta",
-    email: "bilottafrancesco.business@gmail.com",
-    emailVerified: true,
-    phoneNumber: null,
-    photoURL: "https://yt3.ggpht.com/yti/APfAmoE4ExD8iJP0uV9mdfJkWsh2uIG-OLGcHYfHOqcW=s88-c-k-c0x00ffffff-no-rj-mo",
-  });
+  const [user, setUser] = useState();
+
+  const handleLogin = () => {
+    if (!user) {
+      auth
+        .signInWithPopup(provider)
+        .then((result) => {
+          setUser(result.user);
+          console.log(result.user);
+        })
+        .catch((error) => {
+          alert(error.message);
+        });
+    } else if (user) {
+      auth
+        .signOut()
+        .then(() => {
+          setUser(null);
+        })
+        .catch((err) => alert(err.message));
+    }
+  };
   return (
     <div className="App">
-      <Header userPhoto={user.photoURL} />
-
-      <div className="app__main">
-        <Sidebar />
-        <FilesView />
-        <SideIcons />
-      </div>
+      {user ? (
+        <>
+          <Header userPhoto={user.photoURL} />
+          <div className="app__main">
+            <Sidebar />
+            <FilesView />
+            <SideIcons />
+          </div>
+        </>
+      ) : (
+        <div className="app__login">
+          <img src={GDriveLogo} alt="Google Drive" />
+          <button onClick={handleLogin}>Log in to Google Drive</button>
+        </div>
+      )}
 
       {/* No Auth: log in */}
     </div>
