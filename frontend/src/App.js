@@ -3,6 +3,7 @@ import "./App.css";
 import FilesView from "./components/filesView/FilesView";
 import Header from "./components/header/index";
 import Sidebar from "./components/sidebar/index";
+import SideIcons from "./components/sideIcons/index";
 
 function App() {
   const [user, setUser] = useState({
@@ -19,6 +20,7 @@ function App() {
       <div className="app__main">
         <Sidebar />
         <FilesView />
+        <SideIcons />
       </div>
 
       {/* No Auth: log in */}

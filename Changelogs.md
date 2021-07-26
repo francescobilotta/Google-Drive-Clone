@@ -64,3 +64,11 @@
 ##### _Files Visualization_
 
 ![Files Visualization](/doc/photos/6.PNG)<br/>
+
+# 7. [Side Icons]
+
+- Worked on side icons, as the real google drive
+
+##### _Side Icons_
+
+![Side Icons](/doc/photos/7.PNG)<br/>
